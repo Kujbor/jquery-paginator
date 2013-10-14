@@ -1,3 +1,8 @@
+/*
+ * example.js - example of jQuery paginator plugin setup
+ * Author Oleg Taranov aka Kujbor
+ * Copyright (C) 2013: CubeComp Development
+ */
 $.get('templates/pagination.html', function(template) {
 
     $.paginator.setTemplate(_.template(template));

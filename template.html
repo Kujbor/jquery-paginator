@@ -1,9 +1,5 @@
 <ul class="pagination">
-    <li><a href="<%= first %>">&laquo;</a></li>
-    <li><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li><a href="<%= last %>">&raquo;</a></li>
+    <% for (var page = first; page <= last; page++) { %>
+    <li <% if (page === current) { %>class="active"<% } %>><a href="<%= base + page %>"><%= page %></a></li>
+    <% } %>
 </ul>

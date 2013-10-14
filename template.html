@@ -1,3 +1,8 @@
+/*
+ * example.js - example of jQuery paginator plugin template
+ * Author Oleg Taranov aka Kujbor
+ * Copyright (C) 2013: CubeComp Development
+ */
 <ul class="pagination">
     <% for (var page = first; page <= last; page++) { %>
     <li <% if (page === current) { %>class="active"<% } %>><a href="<%= base + page %>"><%= page %></a></li>

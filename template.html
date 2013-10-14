@@ -4,7 +4,8 @@
  * Copyright (C) 2013: CubeComp Development
  */
 <ul class="pagination">
-    <% if (current) { %>
+    <% if (last > 1) { %>
+        <% current = current ? current : 1 %>
         <% for (var page = first; page <= last; page++) { %>
             <li <% if (page === current) { %>class="active"<% } %>><a href="<%= base + page %>"><%= page %></a></li>
         <% } %>

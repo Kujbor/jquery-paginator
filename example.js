@@ -1,6 +1,16 @@
 $(function() {
+
     $.get('templates/pagination.html', function(template) {
+
         $.paginator.setTemplate(_.template(template));
-        $('#pagination').paginator({first: '#1.html', last: '#2.html'});
+
+        $('#pagination').paginator({
+            base: 'page/',
+            first: 1,
+            current: 3,
+            last: 10
+        });
+
     });
+
 });

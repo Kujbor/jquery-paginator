@@ -7,9 +7,9 @@
 
     "use strict";
 
-    var template = new Function;
+    var template;
 
-    $.paginator = new function() {
+    var Paginator = function() {
 
         this.setTemplate = function(renderFunc) {
             template = renderFunc;
@@ -18,13 +18,17 @@
         this.getTemplate = function() {
             return template;
         };
-
     };
+
+    $.paginator = new Paginator();
 
     $.fn.paginator = function(JSON) {
 
-        return $(this).html(template(JSON));
+        if (!template) {
+            console.error('template of paginator not specified');
+        }
 
+        return $(this).html(template(JSON));
     };
 
-})($);
+})(jQuery);

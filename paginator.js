@@ -3,7 +3,7 @@
  * Author Oleg Taranov aka Kujbor
  * Copyright (C) 2013: CubeComp Development
  */
-define("jquery.paginator", ["jquery"], function() {
+define("jquery.paginator", ["jquery"], function($) {
 
     "use strict";
 

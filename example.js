@@ -1,5 +1,5 @@
 /*
- * Example of jQuery paginator plugin setup
+ * Example of jQuery.Paginator plugin setup
  * Author Oleg Taranov aka Kujbor
  * Copyright (C) 2013: CubeComp Development
  */
@@ -15,7 +15,5 @@ $(function() {
             current: 3,
             last: 10
         });
-
     });
-
 });

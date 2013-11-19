@@ -30,5 +30,4 @@ define("jquery.paginator", ["jquery"], function($) {
 
         return $(this).html(template(JSON));
     };
-
 });

@@ -3,7 +3,7 @@
  * Author Oleg Taranov aka Kujbor
  * Copyright (C) 2013: CubeComp Development
  */
-$(function() {
+define("example", ["jquery.paginator", "underscore"], function() {
 
     $.get('templates/pagination.html', function(template) {
 
